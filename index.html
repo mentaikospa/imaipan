@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>パンとケーキのお店 いまいパン</title>
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cantarell:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Kosugi+Maru&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.css">
+    <link rel="stylesheet" href="sass/style.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="js/smooth-scroll.js"></script>
+    <script src="https://kit.fontawesome.com/b62f62c8b7.js" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.min.js"></script>
+    <script>
+        $(function () {
+            $('.bxslider').bxSlider({
+                auto: true,
+                pager: true,
+                mode: 'fade',
+                controls: false,
+                pause: 5000,
+                speed: 700
+            });
+        });
+        $(function () {
+            var map = $('iframe');
+            //あらかじめiframeにpointer-events:noneを掛け、マウスイベントを無効にしておく
+            map.css('pointer-events', 'none');
+            //一度クリックされたらマウスイベントを有効にする 
+            $('.map_wrapper').click(function () {
+                map.css('pointer-events', 'auto');
+            });
+            //iframeからマウスが離れたら再度pointer-events:noneを効かせる 
+            map.mouseout(function () {
+                map.css('pointer-events', 'none');
+            });
+        })
+    </script>
+</head>
+
+<body id="home">
+    <div class="page">
+        <div class="main-image">
+            <div class="top-logo">
+                <img src="images/main-image-logo.png" alt="パンとケーキのお店いまいパン">
+            </div>
+            <div class="bxslider">
+                <div><img src="images/main-image1@2x.jpg"></div>
+                <div><img src="images/main-image2@2x.jpg"></div>
+                <div><img src="images/main-image3@2x.jpg"></div>
+                <div><img src="images/main-image4@2x.jpg"></div>
+                <div><img src="images/main-image5@2x.jpg"></div>
+            </div>
+        </div>
+        <header>
+            <h1><a href="/"><img src="images/logo-header.png" alt="いまいパン"></a></h1>
+            <nav>
+                <ul>
+                    <li><a href="/">
+                            HOME<br>
+                            <span class="ja">ホーム</span>
+                        </a></li>
+                    <li><a href="about.html">
+                            ABOUT US<br>
+                            <span class="ja">いまいパンについて</span>
+                        </a></li>
+                    <li><a href="menu.html">
+                            MENU<br>
+                            <span class="ja">メニュー</span>
+                        </a></li>
+                    <li><a href="">
+                            NEWS<br>
+                            <span class="ja">ニュース</span>
+                        </a></li>
+                    <li><a href="">
+                            RECRUIT<br>
+                            <span class="ja">求人募集</span>
+                        </a></li>
+                    <li><a href="">
+                            CONTACT<br>
+                            <span class="ja">お問い合わせ</span>
+                        </a></li>
+                </ul>
+            </nav>
+            <div class="header-online-shop">
+                <a href=""><img src="images/online-shop.png" alt=""></a>
+            </div>
+        </header>
+        <main>
+            <div class="top-about">
+                <div class="top-about-text">
+                    <div class="illust-bread1"><img src="images/top-illust-bread1.jpg" alt="パン"></div>
+                    <h2>いまいパンとは？</h2>
+                    <p>フランスで修行を積んだ夫婦がパンとケーキをつくっています。<br>
+                        自身の経験を活かし、お客様が毎日通えるお店にこだわっており、<br>
+                        朝から夕方までたくさんの焼きたてのパンを出しています。<br>
+                        ショーケースに並ぶのは1日に約80種類と種類が豊富なので<br>
+                        どのお客様にも、どの時間帯にも<br>
+                        “自分のお気に入りパン”を見つけられる<br>
+                        そんな変わったお店です。
+                    </p>
+                    <div class="illust-bread2"><img src="images/top-illust-bread2.jpg" alt="パン"></div>
+                </div>
+            </div>
+            <div class="top-content">
+                <h2><img src="images/top-title-concept.png" alt="いまいパンのこだわり"></h2>
+                <div class="concept-inner">
+                    <section>
+                        <img src="images/concept1.png" alt="いつでもたくさんのパンを">
+                        <h3>いつでもたくさんのパンを</h3>
+                        <p>閉店するギリギリまでお客様に<br>たくさんの種類の中からパンを<br>選んでほしい。たまには世界の<br>マニアックなパンを楽しんでほ<br>しい。だから、早朝から晩まで<br>パンを焼き続けます。
+                        </p>
+                    </section>
+                    <section>
+                        <img src="images/concept2.png" alt="幸せ届けるケーキを">
+                        <h3>幸せ届けるケーキを</h3>
+                        <p>私たちが修行したフランスで<br>は、パン屋さんは必ずお菓子も<br>一緒に売っています。一日の<br>ほっとするひと時や記念日に。<br>幸せを彩られるよう、心を込め<br>て作っています。
+                        </p>
+                    </section>
+                    <section>
+                        <img src="images/concept3.png" alt="沖縄産素材の美味しさを">
+                        <h3>沖縄産素材の美味しさを</h3>
+                        <p>沖縄県内で収穫された小麦のほ<br>か、カナダ産などをブレンドし<br>て使用。さらに衛生管理を徹底<br>したEM牛乳や美ら卵、老舗豆腐<br>店の豆乳も。地域に根ざしたお<br>店だから地産地消にこだわって<br>います。
+                        </p>
+                    </section>
+                    <section>
+                        <img src="images/concept4.png" alt="素敵なOKINAWAギフトを">
+                        <h3>素敵なOKINAWAギフトを</h3>
+                        <p>いまいパンは世界遺産・識名園<br>から徒歩５分。識名園を訪れた<br>お客様にも喜んで頂きたいと、<br>ギフト・お土産品づくりにも意<br>欲的。一風変わったパッケージ<br>もお楽しみください。
+                        </p>
+                    </section>
+                </div>
+            </div>
+            <div class="top-pickup">
+                <h2><img src="images/top-title-pickup.png" alt="もっとパンを楽しもう！"></h2>
+                <div class="pickup-inner">
+                    <section class="instagram">
+                        <h3><img src="images/Instagram-title.png" alt="インスタグラム"></h3>
+                        <p><a href=""><img src="images/banner-instagram.png" alt="インスタグラム"></a></p>
+                    </section>
+                    <section class="online-shop">
+                        <h3><img src="images/OnlineShop-title.png" alt="オンラインショップ"></h3>
+                        <p><a href=""><img src="images/banner-onlineshop.png" alt="オンラインショップ"></a></p>
+                    </section>
+                </div>
+            </div>
+            <div class="top-shop">
+                <h2><img src="images/top-title-shp.png" alt="店舗情報"></h2>
+                <div class="shop-inner">
+                    <section class="shop-shinji">
+                        <h4>いまいパン 真地本店</h4>
+                        <p>〒902-0072<br>
+                            沖縄県那覇市真地12-4<br>
+                            TEL：098-836-3008<br>
+                            【営業時間】7:30～19:30<br>
+                            【定休日】月曜日</p>
+                    </section>
+                    <section>
+                        <h4>いまいパン 古島店</h4>
+                        <p>〒902-0061<br>
+                            沖縄県那覇市古島1-28-5<br>
+                            TEL：098‐911-1397<br>
+                            【営業時間】10:00～19:30<br>
+                            【定休日】月曜日</p>
+                    </section>
+                </div>
+            </div>
+        </main>
+        <div class="map_wrapper">
+            <iframe src="https://www.google.com/maps/d/embed?mid=14Sdl_GS_z0gx39eRAcugFMhKms9iV5xC" width="100%"
+                height="480" frameborder="0" style="border:0" allowfullscreen></iframe>
+        </div>
+        <footer>
+            <div class="footer-top">
+                <h1><img src="images/logo-footer.png" alt="いまいパン"></h1>
+                <nav>
+                    <ul>
+                        <li><a href="/">HOME</a></li>
+                        <li><a href="/">ABOUT US</a></li>
+                        <li><a href="/">MENU</a></li>
+                        <li><a href="/">NEWS</a></li>
+                        <li><a href="/">RECRUIT</a></li>
+                        <li><a href="/">CONTENT</a></li>
+                        <li><a href="/"><img src="images/footer-onlineshop.png" alt="オンラインショップ"></a></li>
+                    </ul>
+                </nav>
+            </div>
+            <div class="footer-bottom">
+                <p><small>Copyright © 2016 Boulangerie Pâtisserie ImaiPain All rights reserved.</small></p>
+            </div>
+        </footer>
+        <p class="back-top scroll-fade"><a href="#top"><i class="fas fa-arrow-up"></i><br>
+                Topへ</a></p>
+    </div>
+</body>
+
+</html>

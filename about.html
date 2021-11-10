@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>いまいパンについて | パンとケーキのお店 いまいパン</title>
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cantarell:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Kosugi+Maru&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="sass/style.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="js/smooth-scroll.js"></script>
+    <script src="https://kit.fontawesome.com/b62f62c8b7.js" crossorigin="anonymous"></script>
+    <script>
+        $(function () {
+            var map = $('iframe');
+            //あらかじめiframeにpointer-events:noneを掛け、マウスイベントを無効にしておく
+            map.css('pointer-events', 'none');
+            //一度クリックされたらマウスイベントを有効にする 
+            $('.map_wrapper').click(function () {
+                map.css('pointer-events', 'auto');
+            });
+            //iframeからマウスが離れたら再度pointer-events:noneを効かせる 
+            map.mouseout(function () {
+                map.css('pointer-events', 'none');
+            });
+        })
+    </script>
+</head>
+
+<body id="about">
+    <div class="page">
+        <header>
+            <h1><a href="/"><img src="images/logo-header.png" alt="いまいパン"></a></h1>
+            <nav>
+                <ul>
+                    <li><a href="/">
+                            HOME<br>
+                            <span class="ja">ホーム</span>
+                        </a></li>
+                    <li><a href="about.html">
+                            ABOUT US<br>
+                            <span class="ja">いまいパンについて</span>
+                        </a></li>
+                    <li><a href="menu.html">
+                            MENU<br>
+                            <span class="ja">メニュー</span>
+                        </a></li>
+                    <li><a href="">
+                            NEWS<br>
+                            <span class="ja">ニュース</span>
+                        </a></li>
+                    <li><a href="">
+                            RECRUIT<br>
+                            <span class="ja">求人募集</span>
+                        </a></li>
+                    <li><a href="">
+                            CONTACT<br>
+                            <span class="ja">お問い合わせ</span>
+                        </a></li>
+                </ul>
+            </nav>
+            <div class="header-online-shop">
+                <a href=""><img src="images/online-shop.png" alt=""></a>
+            </div>
+        </header>
+        <div class="main-image">
+            <div class="main-image-text">
+                <h2>いまいパンについて</h2>
+            </div>
+            <img src="images/about-header-image.jpg" alt="いまいパンについて">
+        </div>
+        <main>
+            <div class="about-top">
+                <h2>パパはパン、ママはケーキを<br>
+                    作っています。</h2>
+                <p>はじめまして！<br>
+                    私たちは、夫婦でパンとケーキを分担して作っています。<br>
+                    店名になっている「ブーランジェリー」はフランス語でパン屋さん、<br>
+                    「パティスリー」はケーキ屋さんのことです。</p>
+                <img src="images/about-main1.jpg" alt="今井夫婦の画像">
+            </div>
+            <div class="about-france">
+                <img src="images/about-main2.jpg" alt="作業風景">
+                <div class="about-sidetext">
+                    <h2>フランスの修行と出会い</h2>
+                    <p>店主の今井陽介はパン職人として、<br>
+                        東京・フランス・マレーシアで働き、<br>
+                        フランスでは年に一度開催される<br>
+                        「バゲットコンクール」で3位入賞。<br>
+                        様々なコンクールに挑戦してきました。<br>
+                        妻のあいこも洋菓子で3年間フランス修行<br>
+                        しており、そこで私たちは出会いました。</p>
+                </div>
+            </div>
+            <div class="about-okinawa">
+                <div class="about-sidetext">
+                    <h2>沖縄で開業</h2>
+                    <p>2011年の東日本大震災が今後の人生を<br>
+                        よく考えるきっかけとなりました。<br>
+                        昔からのお店を開きたいという夢を叶える<br>
+                        ために妻の地元・沖縄に移住し、2012年に<br>
+                        『ブーランジェリーパティスリー<br>
+                        いまいパン』を開業しました。</p>
+                </div>
+                <img src="images/about-main3.jpg" alt="お店の外観">
+            </div>
+            <div class="about-anshin">
+                <h2>安心で美味しい<br>
+                    パンとケーキを。<br></h2>
+                <p>フランスの製法をベースにしながら、沖縄で収穫されたオーガニックの小麦や卵、<br>
+                    老舗豆腐店の豆乳、旬な野菜やフルーツなど素材選びにも力を入れています。<br>
+                    さらに、小さなお子様からご年配の方までお気に入りが見つかるようにと、<br>
+                    菓子パン、調理パン、酵母パンと様々な種類のパンが小さな店内ですが80種類以上並んでいます。</p>
+                <img src="images/about-main4.jpg" alt="たくさんのパン">
+            </div>
+        </main>
+        <div class="map_wrapper">
+            <iframe src="https://www.google.com/maps/d/embed?mid=14Sdl_GS_z0gx39eRAcugFMhKms9iV5xC" width="100%"
+                height="480" frameborder="0" style="border:0" allowfullscreen></iframe>
+        </div>
+        <footer>
+            <div class="footer-top">
+                <h1><img src="images/logo-footer.png" alt="いまいパン"></h1>
+                <nav>
+                    <ul>
+                        <li><a href="/">HOME</a></li>
+                        <li><a href="/">ABOUT US</a></li>
+                        <li><a href="/">MENU</a></li>
+                        <li><a href="/">NEWS</a></li>
+                        <li><a href="/">RECRUIT</a></li>
+                        <li><a href="/">CONTENT</a></li>
+                        <li><a href="/"><img src="images/footer-onlineshop.png" alt="オンラインショップ"></a></li>
+                    </ul>
+                </nav>
+            </div>
+            <div class="footer-bottom">
+                <p><small>Copyright © 2016 Boulangerie Pâtisserie ImaiPain All rights reserved.</small></p>
+            </div>
+        </footer>
+        <p class="back-top scroll-fade"><a href="#top"><i class="fas fa-arrow-up"></i><br>
+                Topへ</a></p>
+    </div>
+</body>
+
+</html>
